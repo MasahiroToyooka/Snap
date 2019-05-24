@@ -1,0 +1,34 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - Cosmos (19.0.3)
+  - FontAwesome.swift (1.7.0)
+  - MaterialComponents/schemes/Color (84.2.0)
+  - SDWebImage (5.0.3):
+    - SDWebImage/Core (= 5.0.3)
+  - SDWebImage/Core (5.0.3)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - Cosmos (~> 19.0)
+  - FontAwesome.swift
+  - MaterialComponents/schemes/Color
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - Cosmos
+    - FontAwesome.swift
+    - MaterialComponents
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
+  FontAwesome.swift: 9f377615aa61381796dca143cddfd2a388723ea1
+  MaterialComponents: 97aaf99bed91a6918775cb4cdb4d4551ded48c3f
+  SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
+
+PODFILE CHECKSUM: c98fc1902fab14259343c558afc968eb94423782
+
+COCOAPODS: 1.5.3
