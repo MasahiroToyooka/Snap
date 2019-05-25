@@ -5,5 +5,5 @@
 FOURSQUAREのapiを使い現在位置周辺のコーヒーが飲めるところを取得し、セルに表示します。
 セルをタップすると　「Map」　に　飛び現在位置からのルート検索をします。
 
-使用するためには実際に、FOURSQUAREのページ(https://developer.foursquare.com/)でapikey を取得してください。
+使用するためには実際に、FOURSQUAREのページ(https://developer.foursquare.com/) でapikey を取得してください。
 
