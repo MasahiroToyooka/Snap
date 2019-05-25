@@ -1,15 +1,10 @@
 //
-//  Model.swift
+//  File.swift
 //  Snap
 //
-//  Created by 豊岡正紘 on 2019/05/17.
+//  Created by 豊岡正紘 on 2019/05/26.
 //  Copyright © 2019 Masahiro Toyooka. All rights reserved.
 //
-
-// To parse the JSON, add this file to your project and do:
-//
-//   let empty = try? newJSONDecoder().decode(Empty.self, from: jsonData)
-
 import Foundation
 
 struct Empty: Codable {
@@ -218,8 +213,6 @@ class JSONNull: Codable, Hashable {
         return true
     }
     
-//    func hash(into hasher: inout Hasher) { switch self { case .mention: hasher.combine(-1) case .hashtag: hasher.combine(-2) case .url: hasher.combine(-3) case .custom(let regex): hasher.combine(regex) // assuming regex is a string, that already conforms to hashable } }
-//
     public var hashValue: Int {
         return 0
     }
@@ -271,7 +264,7 @@ class JSONAny: Codable {
         let context = EncodingError.Context(codingPath: codingPath, debugDescription: "Cannot encode JSONAny")
         return EncodingError.invalidValue(value, context)
     }
-    
+
     static func decode(from container: SingleValueDecodingContainer) throws -> Any {
         if let value = try? container.decode(Bool.self) {
             return value
@@ -312,6 +305,7 @@ class JSONAny: Codable {
         if var container = try? container.nestedUnkeyedContainer() {
             return try decodeArray(from: &container)
         }
+
         if var container = try? container.nestedContainer(keyedBy: JSONCodingKey.self) {
             return try decodeDictionary(from: &container)
         }
@@ -353,7 +347,7 @@ class JSONAny: Codable {
         }
         return arr
     }
-    
+
     static func decodeDictionary(from container: inout KeyedDecodingContainer<JSONCodingKey>) throws -> [String: Any] {
         var dict = [String: Any]()
         for key in container.allKeys {
@@ -386,7 +380,7 @@ class JSONAny: Codable {
             }
         }
     }
-    
+
     static func encode(to container: inout KeyedEncodingContainer<JSONCodingKey>, dictionary: [String: Any]) throws {
         for (key, value) in dictionary {
             let key = JSONCodingKey(stringValue: key)!
@@ -427,7 +421,7 @@ class JSONAny: Codable {
             throw encodingError(forValue: value, codingPath: container.codingPath)
         }
     }
-    
+
     public required init(from decoder: Decoder) throws {
         if var arrayContainer = try? decoder.unkeyedContainer() {
             self.value = try JSONAny.decodeArray(from: &arrayContainer)
@@ -452,3 +446,4 @@ class JSONAny: Codable {
         }
     }
 }
+

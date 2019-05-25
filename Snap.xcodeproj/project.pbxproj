@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		95F1D742E59D46E69A0974B2 /* Pods_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F65CB9944F350C882B50E5 /* Pods_Snap.framework */; };
+		C10707C022999268008EDA9B /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10707BF22999268008EDA9B /* VenueModel.swift */; };
 		C145312A228D48D00089D1B1 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1453129228D48D00089D1B1 /* VenueCell.swift */; };
-		C1453133228EFF8B0089D1B1 /* VeneuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1453132228EFF8B0089D1B1 /* VeneuModel.swift */; };
 		C1950D802296A4C10049AB68 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950D7F2296A4C10049AB68 /* UIView+Layout.swift */; };
 		C1950D822296A4CA0049AB68 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950D812296A4CA0049AB68 /* Extensions.swift */; };
 		C19C58242285C50D00F0C1B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C58232285C50D00F0C1B3 /* AppDelegate.swift */; };
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		11F65CB9944F350C882B50E5 /* Pods_Snap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A95822FC1901F0AF2F4128 /* Pods-Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snap/Pods-Snap.release.xcconfig"; sourceTree = "<group>"; };
+		C10707BF22999268008EDA9B /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VenueModel.swift; path = Snap/VenueModel.swift; sourceTree = SOURCE_ROOT; };
 		C1453129228D48D00089D1B1 /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
-		C1453132228EFF8B0089D1B1 /* VeneuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeneuModel.swift; sourceTree = "<group>"; };
 		C1950D7F2296A4C10049AB68 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../../../../../Downloads/サンプルapp/AppStoreJSONApis/AppStoreJSONApis/Helpers/UIView+Layout.swift"; sourceTree = "<group>"; };
 		C1950D812296A4CA0049AB68 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../../../../Downloads/サンプルapp/AppStoreJSONApis/AppStoreJSONApis/Helpers/Extensions.swift"; sourceTree = "<group>"; };
 		C19C58202285C50D00F0C1B3 /* Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,7 @@
 		C1453131228EFE440089D1B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C1453132228EFF8B0089D1B1 /* VeneuModel.swift */,
+				C10707BF22999268008EDA9B /* VenueModel.swift */,
 			);
 			name = Models;
 			path = "New Group";
@@ -272,8 +272,8 @@
 				C19C58242285C50D00F0C1B3 /* AppDelegate.swift in Sources */,
 				C1950D822296A4CA0049AB68 /* Extensions.swift in Sources */,
 				C1950D802296A4C10049AB68 /* UIView+Layout.swift in Sources */,
-				C1453133228EFF8B0089D1B1 /* VeneuModel.swift in Sources */,
 				C19C584A228B5B4000F0C1B3 /* BaseVenueCell.swift in Sources */,
+				C10707C022999268008EDA9B /* VenueModel.swift in Sources */,
 				C145312A228D48D00089D1B1 /* VenueCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
