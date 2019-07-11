@@ -9,8 +9,8 @@
 import Foundation
 import CoreLocation
 
-let client_id = "YOUR_client_id"
-let client_secret = "YOUR_client_secret"
+let client_id = "H2GHX4WDDNXOCPEB0BDLKZB0RAL4N3GYR1EMXJDA3WYASBMP"
+let client_secret = "ELALFU5CI03ZUXHT3LBQCIVJKQLHMJHEXHMKXCV3OVEM045H"
 
 class Service {
     
