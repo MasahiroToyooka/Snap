@@ -25,21 +25,6 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     let locationManager = CLLocationManager()
     var currentLocation: CLLocationCoordinate2D!
-    
-    let colorItems = [
-        UIColor.rgb(red: 252, green: 192, blue: 105),
-        UIColor.rgb(red: 203, green: 203, blue: 203),
-        UIColor.rgb(red: 153, green: 166, blue: 255),
-        UIColor.rgb(red: 47, green: 61, blue: 169)
-    ]
-    
-    
-    
-    
-//    let color1 = UIColor.rgb(red: 252, green: 192, blue: 105)
-//    let color2 = UIColor.rgb(red: 203, green: 203, blue: 203)
-//    let color3 = UIColor.rgb(red: 153, green: 166, blue: 255)
-//    let color4 = UIColor.rgb(red: 47, green: 61, blue: 169)
 
     
     override func viewDidLoad() {
@@ -54,7 +39,31 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         
         collectionView.register(VenueCell.self, forCellWithReuseIdentifier: cellId)
         
+        
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(cellLongPressed))
+//        longPressRecognizer.delegate = self
+        collectionView.addGestureRecognizer(longPressRecognizer)
     }
+    
+    @objc func cellLongPressed(gesture: UILongPressGestureRecognizer) {
+        
+        let point = gesture.location(in: collectionView)
+        let indexPath = collectionView.indexPathForItem(at: point)
+        
+//        guard indexPath != nil else { return }
+        
+        if gesture.state == .ended {
+//            print("\(indexPath)番目のセルや！！")
+
+            let location = results[(indexPath?.item)!].venue.location.address
+            print(location)
+            
+            let mapItem = mapItems[(indexPath?.item)!]
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+            mapItem.openInMaps(launchOptions: launchOptions)
+        }
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -68,13 +77,6 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         }
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        animateCollectionView()
-//    }
-    
-// 下のだとスクロールするたびに呼ばれる、上のはアニメーションされない
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
@@ -85,7 +87,6 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     var mapItems = [MKMapItem]()
     
     func fetchData() {
-        
         Service.shared.fetchCoffee(location: currentLocation) { (empty, err) in
             if let err = err {
                 print("なんでやねん", err)
@@ -181,15 +182,15 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         return cell
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let location = results[indexPath.item].venue.location.address
-        print(location)
-        
-        let mapItem = mapItems[indexPath.item]
-        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
-        mapItem.openInMaps(launchOptions: launchOptions)
-    }
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//        let location = results[indexPath.item].venue.location.address
+//        print(location)
+//
+//        let mapItem = mapItems[indexPath.item]
+//        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+//        mapItem.openInMaps(launchOptions: launchOptions)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width-64, height: 200)
