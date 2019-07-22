@@ -18,8 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = HomeViewController(collectionViewLayout: UICollectionViewFlowLayout())
+//        window?.rootViewController = HomeViewController(collectionViewLayout: UICollectionViewFlowLayout())
 
+        
+        window?.rootViewController = ViewController(collectionViewLayout: UICollectionViewFlowLayout())
         return true
     }
 

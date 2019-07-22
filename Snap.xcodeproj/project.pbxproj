@@ -21,6 +21,13 @@
 		C19C5840228718C700F0C1B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C583F228718C700F0C1B3 /* CoreLocation.framework */; };
 		C19C58442288614700F0C1B3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C58432288614700F0C1B3 /* Service.swift */; };
 		C19C584A228B5B4000F0C1B3 /* BaseVenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C5849228B5B4000F0C1B3 /* BaseVenueCell.swift */; };
+		C1EA6FD522E5909C007BE3B4 /* ViewConreoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FD422E5909C007BE3B4 /* ViewConreoller.swift */; };
+		C1EA6FDB22E59836007BE3B4 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FDA22E59836007BE3B4 /* BaseListController.swift */; };
+		C1EA6FDD22E59859007BE3B4 /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FDC22E59859007BE3B4 /* HorizontalSnappingController.swift */; };
+		C1EA6FDF22E5990F007BE3B4 /* BetterSnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FDE22E5990F007BE3B4 /* BetterSnappingLayout.swift */; };
+		C1EA6FE122E599F7007BE3B4 /* AppsHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FE022E599F7007BE3B4 /* AppsHorizontalController.swift */; };
+		C1EA6FE522E59B0C007BE3B4 /* VenuGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FE422E59B0C007BE3B4 /* VenuGroupCell.swift */; };
+		C1EA6FE722E5A11D007BE3B4 /* Venue_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA6FE622E5A11D007BE3B4 /* Venue_Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,13 @@
 		C19C583F228718C700F0C1B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C19C58432288614700F0C1B3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C19C5849228B5B4000F0C1B3 /* BaseVenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVenueCell.swift; sourceTree = "<group>"; };
+		C1EA6FD422E5909C007BE3B4 /* ViewConreoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConreoller.swift; sourceTree = "<group>"; };
+		C1EA6FDA22E59836007BE3B4 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
+		C1EA6FDC22E59859007BE3B4 /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
+		C1EA6FDE22E5990F007BE3B4 /* BetterSnappingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSnappingLayout.swift; sourceTree = "<group>"; };
+		C1EA6FE022E599F7007BE3B4 /* AppsHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHorizontalController.swift; sourceTree = "<group>"; };
+		C1EA6FE422E59B0C007BE3B4 /* VenuGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuGroupCell.swift; sourceTree = "<group>"; };
+		C1EA6FE622E5A11D007BE3B4 /* Venue_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue_Cell.swift; sourceTree = "<group>"; };
 		F49325A0B6BB5A08D6EF12F9 /* Pods-Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snap/Pods-Snap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +77,8 @@
 			children = (
 				C19C5849228B5B4000F0C1B3 /* BaseVenueCell.swift */,
 				C1453129228D48D00089D1B1 /* VenueCell.swift */,
+				C1EA6FE422E59B0C007BE3B4 /* VenuGroupCell.swift */,
+				C1EA6FE622E5A11D007BE3B4 /* Venue_Cell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -71,6 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				C19C58252285C50D00F0C1B3 /* HomeViewController.swift */,
+				C1EA6FD422E5909C007BE3B4 /* ViewConreoller.swift */,
+				C1EA6FDA22E59836007BE3B4 /* BaseListController.swift */,
+				C1EA6FDC22E59859007BE3B4 /* HorizontalSnappingController.swift */,
+				C1EA6FE022E599F7007BE3B4 /* AppsHorizontalController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,6 +144,7 @@
 			children = (
 				C1950D812296A4CA0049AB68 /* Extensions.swift */,
 				C1950D7F2296A4C10049AB68 /* UIView+Layout.swift */,
+				C1EA6FDE22E5990F007BE3B4 /* BetterSnappingLayout.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -267,13 +288,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EA6FDB22E59836007BE3B4 /* BaseListController.swift in Sources */,
+				C1EA6FE522E59B0C007BE3B4 /* VenuGroupCell.swift in Sources */,
+				C1EA6FE722E5A11D007BE3B4 /* Venue_Cell.swift in Sources */,
 				C19C58442288614700F0C1B3 /* Service.swift in Sources */,
 				C19C58262285C50D00F0C1B3 /* HomeViewController.swift in Sources */,
 				C19C58242285C50D00F0C1B3 /* AppDelegate.swift in Sources */,
 				C1950D822296A4CA0049AB68 /* Extensions.swift in Sources */,
 				C1950D802296A4C10049AB68 /* UIView+Layout.swift in Sources */,
+				C1EA6FD522E5909C007BE3B4 /* ViewConreoller.swift in Sources */,
 				C19C584A228B5B4000F0C1B3 /* BaseVenueCell.swift in Sources */,
 				C10707C022999268008EDA9B /* VenueModel.swift in Sources */,
+				C1EA6FDF22E5990F007BE3B4 /* BetterSnappingLayout.swift in Sources */,
+				C1EA6FDD22E59859007BE3B4 /* HorizontalSnappingController.swift in Sources */,
+				C1EA6FE122E599F7007BE3B4 /* AppsHorizontalController.swift in Sources */,
 				C145312A228D48D00089D1B1 /* VenueCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
