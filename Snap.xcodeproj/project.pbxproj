@@ -10,8 +10,6 @@
 		95F1D742E59D46E69A0974B2 /* Pods_Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F65CB9944F350C882B50E5 /* Pods_Snap.framework */; };
 		C10707C022999268008EDA9B /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10707BF22999268008EDA9B /* VenueModel.swift */; };
 		C145312A228D48D00089D1B1 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1453129228D48D00089D1B1 /* VenueCell.swift */; };
-		C1950D802296A4C10049AB68 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950D7F2296A4C10049AB68 /* UIView+Layout.swift */; };
-		C1950D822296A4CA0049AB68 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950D812296A4CA0049AB68 /* Extensions.swift */; };
 		C19C58242285C50D00F0C1B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C58232285C50D00F0C1B3 /* AppDelegate.swift */; };
 		C19C58262285C50D00F0C1B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C58252285C50D00F0C1B3 /* HomeViewController.swift */; };
 		C19C58292285C50D00F0C1B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19C58272285C50D00F0C1B3 /* Main.storyboard */; };
@@ -21,6 +19,8 @@
 		C19C5840228718C700F0C1B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C583F228718C700F0C1B3 /* CoreLocation.framework */; };
 		C19C58442288614700F0C1B3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C58432288614700F0C1B3 /* Service.swift */; };
 		C19C584A228B5B4000F0C1B3 /* BaseVenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C5849228B5B4000F0C1B3 /* BaseVenueCell.swift */; };
+		C1A5D35C232D2F0E00783C58 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D35B232D2F0E00783C58 /* AutoLayout.swift */; };
+		C1A5D35E232D2F8000783C58 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D35D232D2F8000783C58 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,6 @@
 		71A95822FC1901F0AF2F4128 /* Pods-Snap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snap/Pods-Snap.release.xcconfig"; sourceTree = "<group>"; };
 		C10707BF22999268008EDA9B /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VenueModel.swift; path = Snap/VenueModel.swift; sourceTree = SOURCE_ROOT; };
 		C1453129228D48D00089D1B1 /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
-		C1950D7F2296A4C10049AB68 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../../../../../Downloads/サンプルapp/AppStoreJSONApis/AppStoreJSONApis/Helpers/UIView+Layout.swift"; sourceTree = "<group>"; };
-		C1950D812296A4CA0049AB68 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../../../../Downloads/サンプルapp/AppStoreJSONApis/AppStoreJSONApis/Helpers/Extensions.swift"; sourceTree = "<group>"; };
 		C19C58202285C50D00F0C1B3 /* Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19C58232285C50D00F0C1B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C19C58252285C50D00F0C1B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +39,8 @@
 		C19C583F228718C700F0C1B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C19C58432288614700F0C1B3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C19C5849228B5B4000F0C1B3 /* BaseVenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVenueCell.swift; sourceTree = "<group>"; };
+		C1A5D35B232D2F0E00783C58 /* AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
+		C1A5D35D232D2F8000783C58 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F49325A0B6BB5A08D6EF12F9 /* Pods-Snap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snap/Pods-Snap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,24 +108,15 @@
 				C1453131228EFE440089D1B1 /* Models */,
 				C1453130228EFE1C0089D1B1 /* Controllers */,
 				C145312F228EFDBB0089D1B1 /* Views */,
-				C19C58372285CD8300F0C1B3 /* Helpers */,
 				C19C58232285C50D00F0C1B3 /* AppDelegate.swift */,
 				C19C58432288614700F0C1B3 /* Service.swift */,
+				C1A5D35A232D2EF900783C58 /* Helpers */,
 				C19C582A2285C51B00F0C1B3 /* Assets.xcassets */,
 				C19C58272285C50D00F0C1B3 /* Main.storyboard */,
 				C19C582C2285C51B00F0C1B3 /* LaunchScreen.storyboard */,
 				C19C582F2285C51B00F0C1B3 /* Info.plist */,
 			);
 			path = Snap;
-			sourceTree = "<group>";
-		};
-		C19C58372285CD8300F0C1B3 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C1950D812296A4CA0049AB68 /* Extensions.swift */,
-				C1950D7F2296A4C10049AB68 /* UIView+Layout.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C19C583C228718B800F0C1B3 /* Frameworks */ = {
@@ -136,6 +127,15 @@
 				11F65CB9944F350C882B50E5 /* Pods_Snap.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1A5D35A232D2EF900783C58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C1A5D35B232D2F0E00783C58 /* AutoLayout.swift */,
+				C1A5D35D232D2F8000783C58 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F4B2DDE3ADD89300628D82D9 /* Pods */ = {
@@ -270,10 +270,10 @@
 				C19C58442288614700F0C1B3 /* Service.swift in Sources */,
 				C19C58262285C50D00F0C1B3 /* HomeViewController.swift in Sources */,
 				C19C58242285C50D00F0C1B3 /* AppDelegate.swift in Sources */,
-				C1950D822296A4CA0049AB68 /* Extensions.swift in Sources */,
-				C1950D802296A4C10049AB68 /* UIView+Layout.swift in Sources */,
+				C1A5D35E232D2F8000783C58 /* Extensions.swift in Sources */,
 				C19C584A228B5B4000F0C1B3 /* BaseVenueCell.swift in Sources */,
 				C10707C022999268008EDA9B /* VenueModel.swift in Sources */,
+				C1A5D35C232D2F0E00783C58 /* AutoLayout.swift in Sources */,
 				C145312A228D48D00089D1B1 /* VenueCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

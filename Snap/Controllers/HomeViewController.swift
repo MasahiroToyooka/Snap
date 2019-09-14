@@ -145,15 +145,16 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     var animationPerformedOnce = false
     func animateCollectionView() {
-        print(123)
+        
         if !animationPerformedOnce {
-            print(987)
+            
             let cells = collectionView.visibleCells
             //        let collectionViewWidth = collectionView.bounds.size.width
             
             for cell in cells {
                 cell.transform = CGAffineTransform(translationX: view.frame.width, y: 0)
             }
+            
             var delayCounter = 0
             
             for cell in cells {
