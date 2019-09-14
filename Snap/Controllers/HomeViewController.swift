@@ -182,15 +182,15 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         return cell
     }
     
-//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//        let location = results[indexPath.item].venue.location.address
-//        print(location)
-//
-//        let mapItem = mapItems[indexPath.item]
-//        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
-//        mapItem.openInMaps(launchOptions: launchOptions)
-//    }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        let location = results[indexPath.item].venue.location.address
+        print(location)
+
+        let mapItem = mapItems[indexPath.item]
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+        mapItem.openInMaps(launchOptions: launchOptions)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width-64, height: 200)
